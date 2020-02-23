@@ -60,6 +60,7 @@
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
+          <div class="navbar-menu" id="navMenu"></div>
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu ">
@@ -177,7 +178,87 @@
         </div>
       </div>
     </nav>
+
+    <aside class="mobile-menu remove" style="margin-top: 6rem;">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <a class="button is-success">
+            <span class="icon is-small">
+              <i class="fas fa-phone"></i>
+            </span>
+            <strong>Contact Us</strong>
+          </a>
+        </div>
+        <div class="column">
+          <a class="button is-info">
+            <span class="icon is-small">
+              <i class="fas fa-book-open"></i>
+            </span>
+            <strong>Admission Open</strong>
+          </a>
+        </div>
+      </div>
+
+      <p class="menu-label">
+        Navigation Links
+      </p>
+      <ul class="menu-list">
+        <li><a>Message</a></li>
+        <li><a>Department</a></li>
+        <li><a>Faculty Members</a></li>
+        <li><a>Technical Staff</a></li>
+        <li><a>Computer Centre</a></li>
+        <li><a>Library</a></li>
+        <li><a>Training & Placement</a></li>
+        <li><a>Students</a></li>
+        <li><a>Admission</a></li>
+      </ul>
+      <p class="menu-label">
+        General
+      </p>
+      <ul class="menu-list">
+        <li>
+          About Us
+          <ul>
+            <li><a>History</a></li>
+            <li><a>Our Inspiration</a></li>
+            <li><a>Our Aspirations</a></li>
+            <li><a>Core Values</a></li>
+            <li><a>Honor Code</a></li>
+          </ul>
+        </li>
+        <li>
+          Site Map
+          <ul>
+            <li><a>Location</a></li>
+            <li><a>Campus Tour</a></li>
+            <li><a>VIP Road Campus</a></li>
+          </ul>
+        </li>
+        <li>
+          Courses
+          <ul>
+            <li><a>Undergraduate Courses</a></li>
+            <li><a>Fees Structure</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
     <!-- 
+      *
+      *
+      *
+      *
+      Home-Section
+      *
+      *
+      *
+      *
+    -->
+
+    <div class="home-section">
+      <!-- 
       *
       *
       *
@@ -188,23 +269,27 @@
       *
       *
     -->
-    <div class="container college-name" style="margin-top: 6rem;" id="clg-name">
-      <div class="notification is-info ">
-        <h1 class="title has-text-centered is-4">
-          B. P. Poddar Institute Of Management and Technology
-        </h1>
+      <div
+        class="container college-name"
+        style="margin-top: 6rem;"
+        id="clg-name"
+      >
+        <div class="notification is-info ">
+          <h1 class="title has-text-centered is-4">
+            B. P. Poddar Institute Of Management and Technology
+          </h1>
 
-        <h1 class="subtitle has-text-centered is-6">
-          Affiliated to Maulana Abul Kalam Azad University Of Technology, West
-          Bengal [Formerly WBUT]
-        </h1>
+          <h1 class="subtitle has-text-centered is-6">
+            Affiliated to Maulana Abul Kalam Azad University Of Technology, West
+            Bengal [Formerly WBUT]
+          </h1>
 
-        <h1 class="subtitle has-text-centered is-7">
-          Recognised u/s 2f of UGC Act, 1956
-        </h1>
+          <h1 class="subtitle has-text-centered is-7">
+            Recognised u/s 2f of UGC Act, 1956
+          </h1>
+        </div>
       </div>
-    </div>
-    <!-- 
+      <!-- 
       *
       *
       *
@@ -215,36 +300,36 @@
       *
       *
     -->
-    <div class="container " id="carousel-part">
-      <div class="owl-carousel owl-theme add-margin-top">
-        <div class="item ">
-          <figure class="image is-16/9">
-            <img src="./imgs/slider2.jpg" />
-          </figure>
-        </div>
-        <div class="item ">
-          <figure class="image is-16/9">
-            <img src="./imgs/slider3.jpg" />
-          </figure>
-        </div>
-        <div class="item ">
-          <figure class="image is-16/9">
-            <img src="https://bulma.io/images/placeholders/640x360.png" />
-          </figure>
-        </div>
-        <div class="item ">
-          <figure class="image is-16/9">
-            <img src="https://bulma.io/images/placeholders/640x360.png" />
-          </figure>
-        </div>
-        <div class="item ">
-          <figure class="image is-16/9">
-            <img src="https://bulma.io/images/placeholders/640x360.png" />
-          </figure>
+      <div class="container " id="carousel-part">
+        <div class="owl-carousel owl-theme add-margin-top">
+          <div class="item ">
+            <figure class="image is-16/9">
+              <img src="./imgs/slider2.jpg" />
+            </figure>
+          </div>
+          <div class="item ">
+            <figure class="image is-16/9">
+              <img src="./imgs/slider3.jpg" />
+            </figure>
+          </div>
+          <div class="item ">
+            <figure class="image is-16/9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" />
+            </figure>
+          </div>
+          <div class="item ">
+            <figure class="image is-16/9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" />
+            </figure>
+          </div>
+          <div class="item ">
+            <figure class="image is-16/9">
+              <img src="https://bulma.io/images/placeholders/640x360.png" />
+            </figure>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- 
+      <!-- 
       *
       *
       *
@@ -255,26 +340,27 @@
       *
       *
     -->
-    <div class="container " id="intro-notice">
-      <div class="columns ">
-        <div class="column is-two-thirds add-margin-top">
-          <div class="box has-background-white-ter">
-            <h1 class="title is-4 has-text-centered">
-              Welcome to BPPIMT Salt Lake Campus
-            </h1>
-            <h1 class="subtitle is-6 has-text-centered">
-              Located in Sector V Saltlake, Kolkata, the institute was set up as
-              a tribute to the memory of Shri B.P. Poddar (1920-1981), a great
-              philanthropist and educationist and founder of the Poddar Group,
-              one of the most respected corporate groups in the country today.
-            </h1>
-            <figure class="image">
-              <img src="./imgs/buliding.jpg" alt="" />
-            </figure>
+      <div class="container " id="intro-notice">
+        <div class="columns ">
+          <div class="column is-two-thirds add-margin-top">
+            <div class="box has-background-white-ter">
+              <h1 class="title is-4 has-text-centered">
+                Welcome to BPPIMT Salt Lake Campus
+              </h1>
+              <h1 class="subtitle is-6 has-text-centered">
+                Located in Sector V Saltlake, Kolkata, the institute was set up
+                as a tribute to the memory of Shri B.P. Poddar (1920-1981), a
+                great philanthropist and educationist and founder of the Poddar
+                Group, one of the most respected corporate groups in the country
+                today.
+              </h1>
+              <figure class="image">
+                <img src="./imgs/buliding.jpg" alt="" />
+              </figure>
+            </div>
           </div>
-        </div>
 
-        <!-- 
+          <!-- 
       *
       *
       *
@@ -285,70 +371,70 @@
       *
       *
     -->
-        <div class="column add-margin-top">
-          <nav class="panel is-warning ">
-            <p class="panel-heading">
-              Important Notice
-            </p>
-            <a class="panel-block is-active">
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              bulma
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              marksheet
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              minireset.css
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              jgthms.github.io
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-code-branch" aria-hidden="true"></i>
-              </span>
-              daniellowtw/infboard
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-code-branch" aria-hidden="true"></i>
-              </span>
-              mojs
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              jgthms.github.io
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              jgthms.github.io
-            </a>
-            <a class="panel-block">
-              <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-              </span>
-              jgthms.github.io
-            </a>
-          </nav>
+          <div class="column add-margin-top">
+            <nav class="panel is-warning ">
+              <p class="panel-heading">
+                Important Notice
+              </p>
+              <a class="panel-block is-active">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                bulma
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                marksheet
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                minireset.css
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                jgthms.github.io
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-code-branch" aria-hidden="true"></i>
+                </span>
+                daniellowtw/infboard
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-code-branch" aria-hidden="true"></i>
+                </span>
+                mojs
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                jgthms.github.io
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                jgthms.github.io
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                jgthms.github.io
+              </a>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- 
+      <!-- 
       *
       *
       *
@@ -359,7 +445,7 @@
       *
       *
     -->
-    <!-- 
+      <!-- 
       *
       *
       *
@@ -370,37 +456,50 @@
       *
       *
     -->
-    <div class="container" id="vision-mission">
-      <div class="columns is-6 ">
-        <section class="column add-margin-top ">
-          <div class="notification is-link notification-modified">
-            <h1 class="title is-4">
-              Mission
-            </h1>
-            <h1 class="subtitle is-6">
-              To emerge as a globally competent academic institute, excelling in
-              research and innovation by inculcating knowledge of science,
-              engineering, technology and management, striving for the growth of
-              socially responsible individuals.
-            </h1>
-          </div>
-        </section>
+      <div class="container" id="vision-mission">
+        <div class="columns is-6 ">
+          <section class="column add-margin-top ">
+            <div class="notification is-link notification-modified">
+              <h1 class="title is-4">
+                Mission
+              </h1>
+              <h1 class="subtitle is-6">
+                To emerge as a globally competent academic institute, excelling
+                in research and innovation by inculcating knowledge of science,
+                engineering, technology and management, striving for the growth
+                of socially responsible individuals.
+              </h1>
+            </div>
+          </section>
 
-        <section class="column add-margin-top">
-          <div class="notification is-success ">
-            <h1 class="title is-4 ">Vision</h1>
-            <h1 class="subtitle is-6">
-              To develop an Institution of Excellence for advancement of
-              Science, Technology & Social Sciences and for creation of
-              professionals with high sense of ethical values and commitment to
-              the Society, capable of functioning unfettered by the shackles of
-              caste, creed, political dogmas and religious parochialism, to
-              effectively contribute to and lead in the shaping of the nation.
-            </h1>
-          </div>
-        </section>
+          <section class="column add-margin-top">
+            <div class="notification is-success ">
+              <h1 class="title is-4 ">Vision</h1>
+              <h1 class="subtitle is-6">
+                To develop an Institution of Excellence for advancement of
+                Science, Technology & Social Sciences and for creation of
+                professionals with high sense of ethical values and commitment
+                to the Society, capable of functioning unfettered by the
+                shackles of caste, creed, political dogmas and religious
+                parochialism, to effectively contribute to and lead in the
+                shaping of the nation.
+              </h1>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
+    <!-- 
+      *
+      *
+      *
+      *
+      Home-Section
+      *
+      *
+      *
+      *
+    -->
 
     <div
       class="container remove not-in-home"
@@ -659,7 +758,6 @@
         </p>
       </div>
     </footer>
-
     <script>
       $(".owl-carousel").owlCarousel({
         margin: 10,

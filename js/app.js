@@ -130,10 +130,20 @@ function hideEveryElement() {
   hideElement(document.getElementById("vision-mission"));
 }
 
-
 function hideElement(element) {
   element.classList.add("remove");
 }
 function showElement(element) {
   element.classList.remove("remove");
 }
+
+$(document).ready(function() {
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $(".navbar-burger").toggleClass("is-active");
+    $(".mobile-menu").toggleClass("remove");
+    $(".home-section").toggleClass("remove");
+    $(".footer").toggleClass("remove");
+  });
+});
