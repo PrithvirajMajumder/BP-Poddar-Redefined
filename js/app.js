@@ -147,7 +147,3 @@ $(document).ready(function() {
     $(".footer").toggleClass("remove");
   });
 });
-
-$(".navbar-burger").click(function() {
-  $("#mobile-nav-history").toggle(showHistory());
-});
