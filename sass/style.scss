@@ -14,6 +14,19 @@
   flex-wrap: wrap;
   align-items: center;
 }
+.centered-allign {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.add-gap {
+  margin-right: 1rem;
+}
+
+.has-flex-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .add-padding {
   padding: 1rem;
@@ -33,7 +46,18 @@
 .body {
   padding: 0 10px;
 }
+.add-padding {
+  padding: 0 10px;
+}
 
 .notification-modified {
   height: 12rem;
+}
+
+.text-overflow {
+  overflow: scroll;
+}
+
+.remove {
+  display: none;
 }

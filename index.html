@@ -27,15 +27,27 @@
 
     <title>Document</title>
   </head>
+
   <body class="body">
+    <!-- 
+      *
+      *
+      *
+      *
+      The Fixed Navigation Bar
+      *
+      *
+      *
+      *
+    -->
     <nav
       class="navbar add-padding is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
       <div class="container">
-        <div class="navbar-brand ">
-          <img src="./imgs/logo1.png" width="224" height="112" />
+        <div class="navbar-brand" style="margin: 1rem 0;">
+          <img src="./imgs/logo1.png" width="224" height="112" id="home-logo" />
 
           <a
             role="button"
@@ -52,7 +64,7 @@
 
         <div id="navbarBasicExample" class="navbar-menu ">
           <div class="navbar-start">
-            <a class="navbar-item">
+            <a class="navbar-item" id="nav-home">
               Home
             </a>
 
@@ -62,19 +74,19 @@
               </a>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item">
+                <a class="navbar-item" id="nav-history">
                   History
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" id="nav-inspiration">
                   Our Inspiration
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" id="nav-aspiration">
                   Our Aspirations
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" id="nav-core-values">
                   Core Values
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" id="nav-honor-code">
                   Honor Code
                 </a>
               </div>
@@ -86,13 +98,13 @@
               </a>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item">
+                <a class="navbar-item" id="nav-location">
                   Location
                 </a>
                 <a class="navbar-item">
                   Campus Tour
                 </a>
-                <a class="navbar-item">
+                <a href="http://bppimt.ac.in/" class="navbar-item">
                   VIP Road Campus
                 </a>
               </div>
@@ -127,21 +139,56 @@
                   </span>
                   <strong>Admission Open</strong>
                 </a>
-
-                <a class="button is-light">
-                  <span class="icon is-small">
-                    <i class="fas fa-arrow-circle-down"></i>
-                  </span>
-                  <strong>More</strong>
-                </a>
+                <div class="dropdown is-right">
+                  <div class="dropdown is-hoverable">
+                    <div class="dropdown-trigger">
+                      <a class="button is-light">
+                        <span class="icon is-small">
+                          <i class="fas fa-arrow-circle-down"></i>
+                        </span>
+                        <strong>More</strong>
+                      </a>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                      <div class="dropdown-content has-background-warning">
+                        <div class="menu add-padding">
+                          <p class="menu-label">
+                            <strong>More Feautures</strong>
+                          </p>
+                          <ul class="menu-list">
+                            <li><a>Message</a></li>
+                            <li><a>Department</a></li>
+                            <li><a>Faculty Members</a></li>
+                            <li><a>Technical Staff</a></li>
+                            <li><a>Computer Centre</a></li>
+                            <li><a>Library</a></li>
+                            <li><a>Training & Placement</a></li>
+                            <li><a>Students</a></li>
+                            <li><a>Admission</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
-
-    <div class="container " style="margin-top: 6rem;">
+    <!-- 
+      *
+      *
+      *
+      *
+      College Name and Address
+      *
+      *
+      *
+      *
+    -->
+    <div class="container college-name" style="margin-top: 6rem;" id="clg-name">
       <div class="notification is-info ">
         <h1 class="title has-text-centered is-4">
           B. P. Poddar Institute Of Management and Technology
@@ -157,8 +204,18 @@
         </h1>
       </div>
     </div>
-
-    <div class="container ">
+    <!-- 
+      *
+      *
+      *
+      *
+      The Carousel Part
+      *
+      *
+      *
+      *
+    -->
+    <div class="container " id="carousel-part">
       <div class="owl-carousel owl-theme add-margin-top">
         <div class="item ">
           <figure class="image is-16/9">
@@ -172,7 +229,7 @@
         </div>
         <div class="item ">
           <figure class="image is-16/9">
-            <img src="./imgs/slidertwo.jpg" />
+            <img src="https://bulma.io/images/placeholders/640x360.png" />
           </figure>
         </div>
         <div class="item ">
@@ -187,8 +244,18 @@
         </div>
       </div>
     </div>
-
-    <div class="container ">
+    <!-- 
+      *
+      *
+      *
+      *
+      The Intro Box and Notice
+      *
+      *
+      *
+      *
+    -->
+    <div class="container " id="intro-notice">
       <div class="columns ">
         <div class="column is-two-thirds add-margin-top">
           <div class="box has-background-white-ter">
@@ -206,6 +273,18 @@
             </figure>
           </div>
         </div>
+
+        <!-- 
+      *
+      *
+      *
+      *
+      The Notice Part
+      *
+      *
+      *
+      *
+    -->
         <div class="column add-margin-top">
           <nav class="panel is-warning ">
             <p class="panel-heading">
@@ -269,8 +348,29 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
+    <!-- 
+      *
+      *
+      *
+      *
+      Mission and Vission Part
+      *
+      *
+      *
+      *
+    -->
+    <!-- 
+      *
+      *
+      *
+      *
+      About Us Section
+      *
+      *
+      *
+      *
+    -->
+    <div class="container" id="vision-mission">
       <div class="columns is-6 ">
         <section class="column add-margin-top ">
           <div class="notification is-link notification-modified">
@@ -302,7 +402,251 @@
       </div>
     </div>
 
-    <footer class="footer">
+    <div
+      class="container remove not-in-home"
+      id="history"
+      style="margin-top: 6rem;"
+    >
+      <div class="notification is-warning">
+        <div class="is-flex centered-allign">
+          <div class="icon is-medium add-gap">
+            <i class="fas fa-hourglass-start fa-2x "></i>
+          </div>
+          <h1 class="title">History</h1>
+        </div>
+        <div>
+          <figure class="image add-margin-top ">
+            <img
+              src="./imgs/historyImage.gif"
+              alt=""
+              style="max-width: 100%; margin: 0 auto;"
+            />
+          </figure>
+        </div>
+        <div>
+          <h1 class="subtitle is-6 add-margin-top">
+            B.P.Poddar Institute of Management and Technology (BPPIMT), Salt
+            Lake Campus was established in the year 2005, under the aegis of
+            B.P.Poddar Foundation for Education, a Trust dedicated to enriching
+            the quality of technical education in the country. The Institute was
+            set up as a tribute to the memory of Late Badri Prasad Poddar,
+            philanthropist and educationist and the founder of the B.P.Poddar
+            Group. The B.P. Poddar Institute of Managment & Technology is
+            affiliated to the West Bengal University of Technology, Kolkata. The
+            courses offered are structured according to prevailing international
+            standards. The Institute blends a dynamic and progressive approach
+            to education with high quality, innovative and result oriented
+            programmes which has been affiliated to the WBUT, Kolkata recognized
+            by UGC and conducts Bachelor of Business Administration (Hons),
+            Bachelor of Computer Application and Bachelor of Hospital Management
+            courses at the undergraduate level. The education system at the
+            institute encourages close interaction between faculty and students.
+            This helps the students to think creatively and develop
+            understanding and powers of critical evaluation.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container not-in-home remove"
+      id="aspiration"
+      style="margin-top: 6rem;"
+    >
+      <div class="notification is-danger">
+        <div class="is-flex centered-allign">
+          <div class="icon is-medium add-gap">
+            <i class="fas fa-medal fa-2x "></i>
+          </div>
+          <h1 class="title">Our Aspirations</h1>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>
+              We will strive to create the best career opportunities for all
+              students by imparting the right mix of Management and Technical
+              education, abreast of the latest trends in the industry
+            </li>
+            <li>
+              We will foster an open and collaborative environment for exchange
+              of ideas and best practices, paving the way to improve
+              interpersonal skills, creating an overall broader vision
+            </li>
+            <li>
+              We believe in catalyzing innovation that will precipitate
+              pedagogical excellence to ideate creative solutions to economic
+              and technical challenges
+            </li>
+            <li>
+              We will emphasize on imbibing strong ethical values and develop a
+              sense of responsibility towards our society and country
+            </li>
+            <li>
+              We will ensure that our quality of education lays the foundation
+              to enable students to assume leadership roles in organizations and
+              pursue higher education in esteemed international colleges in the
+              areas of applied research.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container not-in-home remove"
+      id="core-values"
+      style="margin-top: 6rem;"
+    >
+      <div class="notification is-danger">
+        <div class="is-flex centered-allign">
+          <div class="icon is-medium add-gap">
+            <i class="fas fa-heart fa-2x "></i>
+          </div>
+          <h1 class="title">Core Values</h1>
+        </div>
+
+        <div>
+          <h1 class="subtitle">
+            Delivering innovative education products and services to bring out
+            industry-ready professionals, researchers, advanced learners,
+            educators and entrepreneurs, who can respect diversity and take best
+            care of their organization and society. “Om . Let all of us protect
+            each other together, may all of us enjoy together, may all of us
+            work together and let our study become radiant. Let there be no
+            hatred between us. Om Peace Peace Peace.” - Peace Mantra from
+            Upanishad
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container not-in-home remove"
+      id="honor-code"
+      style="margin-top: 6rem;"
+    >
+      <div class="notification is-warning">
+        <div class="is-flex centered-allign">
+          <div class="icon is-medium add-gap">
+            <i class="fas fa-gavel fa-2x "></i>
+          </div>
+          <h1 class="title">Honor Code</h1>
+        </div>
+
+        <div>
+          <h1 class="title is-5">A guideline for the students:</h1>
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>Be Honest</li>
+            <li>Obey rules and regulations</li>
+            <li>Be Committed</li>
+            <li>Respect Others</li>
+            <li>Maintain Sustainability</li>
+            <li>Aspire for Excellence</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container remove not-in-home"
+      id="inspiration"
+      style="margin-top: 6rem;"
+    >
+      <div class="notification is-success">
+        <div class="is-flex centered-allign">
+          <div class="icon is-medium add-gap">
+            <i class="fas fa-crown fa-2x "></i>
+          </div>
+          <h1 class="title">Our Inspiration Late B.P. Poddar</h1>
+        </div>
+        <div>
+          <figure class="image add-margin-top ">
+            <img
+              src="./imgs/poddarGod.gif"
+              alt=""
+              style="max-width: 100%; margin: 0 auto;"
+            />
+          </figure>
+        </div>
+        <div>
+          <h1 class="subtitle is-6 add-margin-top">
+            Late Badri Prasad Poddar, was a great philanthropist and
+            educationist and the founder of the Poddar Group. He was keenly
+            interested in the development of technical education and was
+            associated with IIT Kharagpur as the Chairman. He was also the
+            Chairman of Calcutta Tramways Company and the Birla Industrial and
+            Technological Museum. He was a member of the Executive Committee of
+            the International Chamber of Commerce, a Member of the Governing
+            Body of the Jawaharlal Nehru University, a member of the Board of
+            Governors, Institute of Social Welfare and Business Management and
+            the Chairman of the Commission of Asian and Pacific Affairs. B.P.
+            Poddar Institute of Management & Technology was set up as a tribute
+            to the memory of him.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- 
+      *
+      *
+      *
+      *
+      About Us Section
+      *
+      *
+      *
+      *
+    -->
+    <div
+      class="container not-in-home remove"
+      id="location"
+      style="margin-top: 6rem;"
+    >
+      <div class="notification is-warning">
+        <div class="is-flex centered-allign">
+          <div class="icon is-medium add-gap">
+            <i class="fas fa-thumbtack fa-2x "></i>
+          </div>
+          <h1 class="title">Location</h1>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <p class="subtitle">
+              Located in Sector V Saltlake, Kolkata, the institute was set up as
+              a tribute to the memory of Shri B.P. Poddar (1920-1981), a great
+              philanthropist and educationist and founder of the Poddar Group,
+              one of the most respected corporate groups in the country today.
+            </p>
+          </div>
+          <div class="column">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.145629609167!2d88.42937781406984!3d22.573655985182207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275afcc15a537%3A0x7525ef3d334642b6!2sBP%20Poddar%20Institute%20of%20Management%20and%20Technology!5e0!3m2!1sen!2sin!4v1582461849387!5m2!1sen!2sin"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      *
+      *
+      *
+      *
+      The Footer Part
+      *
+      *
+      *
+      *
+    -->
+    <footer class="footer" id="footer">
       <div class="content has-text-centered">
         <p>
           <strong>BPPIMT</strong> by
@@ -325,6 +669,8 @@
         items: 1
       });
     </script>
+
+    <script src="./js/app.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
